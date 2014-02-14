@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4CF83E6-B8E2-4AC4-9B1F-0FCEAD1CB9EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DrugMgrSys</RootNamespace>
+    <AssemblyName>DrugMgrSys</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseOperate, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8551f830a7c22661, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\BaseOperate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDrugBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrugBox.Designer.cs">
+      <DependentUpon>FrmDrugBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDrugDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrugDict.Designer.cs">
+      <DependentUpon>FrmDrugDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPwdChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPwdChange.Designer.cs">
+      <DependentUpon>FrmPwdChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsedRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsedRecord.Designer.cs">
+      <DependentUpon>FrmUsedRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWasteRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWasteRecord.Designer.cs">
+      <DependentUpon>FrmWasteRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParentMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParentMain.Designer.cs">
+      <DependentUpon>MDIParentMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmDrugInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrugInit.Designer.cs">
+      <DependentUpon>FrmDrugInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDrugBasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrugBasic.Designer.cs">
+      <DependentUpon>FrmDrugBasic.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmDrugBox.resx">
+      <DependentUpon>FrmDrugBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDrugDict.resx">
+      <DependentUpon>FrmDrugDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPwdChange.resx">
+      <DependentUpon>FrmPwdChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsedRecord.resx">
+      <DependentUpon>FrmUsedRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWasteRecord.resx">
+      <DependentUpon>FrmWasteRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParentMain.resx">
+      <DependentUpon>MDIParentMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmDrugInit.resx">
+      <DependentUpon>FrmDrugInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDrugBasic.resx">
+      <DependentUpon>FrmDrugBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{58A59835-0B55-452D-9622-2BCA1DDA7491}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\BaseOperate.dll" />
+    <Content Include="CodeConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Other\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
